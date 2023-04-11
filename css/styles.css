@@ -177,10 +177,6 @@ input:not([type="checkbox"]) {
     margin-top: 0;
 }
 
-input:not([type="checkbox"]) + input:not([type="checkbox"]) {
-    margin-bottom: 19px;
-}
-
 input::placeholder {
     opacity: 0.5;
 }
@@ -201,11 +197,14 @@ input[type="checkbox"] {
     background-color: transparent;
     transition: all linear 0.25s;
     margin-right: 3px;
+    margin-top: 7px;
 }
 
 input[type="checkbox"]:checked {
     background-color: var(--primary)
 }
+
+input[type="checkbox"] + label { margin-top: 7px; }
 
 button {
     border: none;
