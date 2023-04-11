@@ -257,9 +257,7 @@ dialog img {
 }
 
 @media (max-width: 800px) {
-    margin {
-        padding: 50px 30px;
-    }
+    main { padding: 50px 30px; }
     section { margin-bottom: 30px; }
     p { width: 100%; }
     h1 { font-size: min(64px, 16vw); }
