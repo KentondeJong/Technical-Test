@@ -53,10 +53,7 @@ dialog {
     text-align: center;
     width: 388px;
     padding: 32px 36px 36px 36px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    margin: auto; 
     border-radius: 12px;
     border: none; 
 }
