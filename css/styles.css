@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #FD0272;
+    --active: #D10761;
+    --secondary: #FFDD4D;
+    --black: #1E1F22;
+    --white: #FFFFFF;
+    --form_border: #0000001A;
+    --form_field: #ECEDF2;
+    --placeholder: #8E8E90;
+    --copy: #828691;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--black);
+    line-height: 1;
+}
+
+*::-moz-selection { background-color: var(--primary); color: var(--white); }
+*::selection { background-color: var(--primary); color: var(--white); }
+
+/*SECTIONS*/
+
+main {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+section, form { 
+    width: 100%
+}
+
+form {
+    border: 2px solid var(--form_border);
+    border-radius: 24px;
+    position: relative;
+    padding: 47px 30px;
+}
+
+dialog {
+    text-align: center;
+    width: 380px;
+    padding: 32px 36px 36px 36px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 12px;
+    border: none; 
+}
+
+dialog::backdrop {
+    background-color: #000000CC;
+}
+
+.close {
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    background-color: var(--form_field);
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    rotate: 45deg;
+    cursor: pointer;
+}
+
+.close:before, .close:after {
+    content: '';
+    background-color: var(--black);
+    width: 2px;
+    height: 12px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.close:after {
+    width: 12px;
+    height: 2px;
+}
+
+/*TEXT*/
+
+h1 {
+    font-size: 64px;
+    line-height:1.15625;
+    letter-spacing: -0.77px;
+    margin: 20px 0;
+}
+
+h1 span { color: var(--primary); }
+
+h2 {
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 11px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0px;
+    color: var(--copy);
+    width: 80%;
+}
+
+p.info {
+    position: absolute;
+    padding: 9px 23px;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    color: #1E1F22;
+    top: -10px;
+    left: -10px;
+    background-color: var(--secondary);
+    width: auto;
+    font-weight: bold;
+    line-height: 2;
+}
+
+label {
+    font-size: 13px;
+    line-height: 2.15;
+    font-weight: 500;
+}
+
+label[for="terms"] {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+}
+
+label a {
+    transition: all linear 0.25s;
+}
+
+input {
+    background: var(--white);
+    border: 2px solid var(--form_border);
+    outline: none;
+}  
+
+input:not([type="checkbox"]) {
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 14px 17px;
+    width: 100%;
+    margin-bottom: 18px;
+    transition: all linear 0.25s;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+input:not([type="checkbox"]):where(:hover, :focus) {
+    border: 2px solid var(--primary);
+}
+
+input[type="checkbox"] {
+    border-radius: 5px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all linear 0.25s;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--primary)
+}
+
+button {
+    border: none; 
+    background: var(--primary);
+    border-radius: 12px;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1;
+    padding: 18px;
+    width: 100%;
+    cursor: pointer;
+    transition: all linear 0.25s;
+    margin-top: 32px;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+button:where(:hover, :focus) {
+    background-color: var(--active)
+}
+
+dialog p {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+dialog p span { 
+    display: inline-block;
+}
+
+dialog p span:first-letter {
+    text-transform: capitalize;
+}
+
+dialog img {
+    width: 104px;
+    margin: 0 auto 10.38px auto;
+}
+
+@media (min-width: 800px) {
+    section { max-width: 554px; }
+    form { max-width: 408px}
+}
