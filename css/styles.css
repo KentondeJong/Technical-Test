@@ -35,7 +35,7 @@ main {
     flex-wrap: wrap;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0 17px;
+    padding-left: 17px;
 }
 
 section, form { 
@@ -252,6 +252,10 @@ dialog img {
         width: 44%;
         max-width: 418px
     }
+}
+
+@media (max-width: 1000px) {
+    main { padding-right: 17px; }   
 }
 
 @media (max-width: 800px) {
