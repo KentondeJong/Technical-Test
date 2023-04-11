@@ -63,6 +63,7 @@ dialog {
 
 dialog::backdrop {
     background-color: #000000CC;
+    backdrop-filter: blur(3px);
 }
 
 .close {
