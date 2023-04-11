@@ -50,7 +50,7 @@ form {
 
 dialog {
     text-align: center;
-    width: 380px;
+    width: 388px;
     padding: 32px 36px 36px 36px;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -80,7 +80,7 @@ dialog::backdrop {
     content: '';
     background-color: var(--black);
     width: 2px;
-    height: 12px;
+    height: 10px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -88,7 +88,7 @@ dialog::backdrop {
 }
 
 .close:after {
-    width: 12px;
+    width: 10px;
     height: 2px;
 }
 
@@ -113,7 +113,7 @@ h2 {
 h3 {
     font-size: 24px;
     line-height: 1.25;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -149,6 +149,7 @@ label[for="terms"] {
     vertical-align: top;
     line-height: 1;
     letter-spacing: 0.2px;
+    margin-top: 7px;
 }
 
 label a {
@@ -204,8 +205,6 @@ input[type="checkbox"]:checked {
     background-color: var(--primary)
 }
 
-input[type="checkbox"] + label { margin-top: 7px; }
-
 button {
     border: none;
     background: var(--primary);
@@ -217,8 +216,8 @@ button {
     width: 100%;
     cursor: pointer;
     transition: all linear 0.25s;
-    margin-top: 28px;
-    margin-bottom: 3px;
+    margin-top: 30px;
+    margin-bottom: 0;
     font-weight: 600;
 }
 
@@ -241,8 +240,8 @@ dialog p span:first-letter {
 }
 
 dialog img {
-    width: 104px;
-    margin: 0 auto 10.38px auto;
+    width: 107px;
+    margin: 0 auto 8px auto;
 }
 
 @media (min-width: 800px) {
