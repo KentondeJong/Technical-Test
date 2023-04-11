@@ -35,6 +35,7 @@ main {
     flex-wrap: wrap;
     min-height: 100vh;
     margin: 0 auto;
+    padding: 0 17px;
 }
 
 section, form { 
@@ -245,11 +246,22 @@ dialog img {
 }
 
 @media (min-width: 800px) {
-    section { 
+    section {
+        width: 55%;
         max-width: 554px;
-        margin-left: 17px;
     }
     form {
+        width: 44%;
         max-width: 418px
     }
+}
+
+@media (max-width: 800px) {
+    margin {
+        padding: 50px 30px;
+    }
+    section { margin-bottom: 30px; }
+    p { width: 100%; }
+    h1 { font-size: min(64px, 16vw); }
+    h2 { font-size: min(24px, 6vw); }
 }
